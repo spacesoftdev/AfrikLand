@@ -1,0 +1,1404 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="flex justify-center hero-wrap hero-wrap-2 h-full  mb-6"
+  style="background-image: url('/media/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+
+  <div class="container w-7/12">
+    <div class="flex items-center no-gutters slider-text align-items-end">
+      <div class="col-md-9 ftco-animate pb-5">
+        <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{% url 'index:home'%}">Home <i
+                class="ion-ios-arrow-forward"></i></a></span> <span>Mannual <i class="ion-ios-arrow-forward"></i></span>
+        </p>
+        <h1 class="mb-0 bread">Mannual</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section></section>
+
+<section class="flex justify-center  my-6 py-6">
+  <div class="container w-7/12">
+    <div class="flex items-center no-gutters slider-text align-items-end">
+      <div class="col-md-9 ftco-animate pb-5">
+        <h1 class="mb-0 text-lg">User Guide</h1>
+        <p class="text-md font-sans text-gray-600 leading-loose">This is to guide you step by step on how to use the
+          Afrikbook Accounting software</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="flex justify-center  my-6 py-6">
+  <div class="container">
+    <!-- Page <spam id="currentPage">Get Started</spam> -->
+    <div class="flex flex-col md:flex-row ">
+      <div class="border w-full md:w-3/12 bg-primary text-white">
+        <div class="bg-gray-900 p-4 transition-transform duration-300 transform hover:bg-gray-900 text-md button" data-target="start" data-num="1">Get Started</div>
+        <div class="bg-primary p-4  hover:bg-gray-900 text-md button" data-target="account" data-num="2">Account</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="vendor" data-num="3">Vendor</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="customer" data-num="4">Customer</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="journal" data-num="5">Journal</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="stock" data-num="6">Stock</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="report" data-num="7">Report</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="settings" data-num="8">Settings</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="exp" data-num="9">Expiration Control</div>
+        <div class="bg-primary p-4 hover:bg-gray-900 text-md button" data-target="employee" data-num="10">Employee</div>
+      </div>
+
+      <div class="w-full md:w-9/12 p-2 border border-gray-90 rounded-r-md bg-white h-[800px] overflow-y-scroll">
+        <div id="start" class="page py-6">
+          <div class="media-body mb-4 border-b">
+            <h3 class="text-xl font-sans font-bold mb-6">Login</h3>
+            <div class="w-full flex justify-center overflow-hidden">
+              <img src="/media/afrikbook/login.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+            </div>
+            <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+            <p class="text-md font-sans text-gray-600 leading-normal mb-4">click on Register as a company</p>
+          </div>
+          <div class="media-body mb-4 border-b">
+            <h3 class="text-xl font-sans font-bold mb-6">Register<span class="text-sm text-gray-600 font-normal"> step 1</span></h3>
+            <div class="w-full flex justify-center overflow-hidden">
+              <img src="/media/afrikbook/register_1.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+            </div>
+            <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+              <ul class="text-gray-600 text-sm font-sans">
+                <li><a href="#" class="my-4">Company name[ ]</a></li>
+                <li><a href="#" class="my-4">Phone number[ ]</a></li>
+                <li><a href="#" class="my-4">Email[ ]</a></li>
+              </ul>
+            </div>
+            <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and verify your email then click next to proceed registration process</p>
+          </div>
+          <div class="media-body mb-4 border-b">
+            <h3 class="text-xl font-sans font-bold mb-6">Register<span class="text-sm text-gray-600 font-normal"> step 2</span></h3>
+            <div class="w-full flex justify-center overflow-hidden">
+              <img src="/media/afrikbook/register_2.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+            </div>
+            <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+              <ul class="text-gray-600 text-sm font-sans">
+                <li><a href="#" class="my-4">Address[ ]</a></li>
+                <li><a href="#" class="my-4">City number[ ]</a></li>
+                <li><a href="#" class="my-4">State[ ]</a></li>
+                <li><a href="#" class="my-4">Country[ ]</a></li>
+              </ul>
+            </div>
+            <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and verify your email then click next to proceed registration process</p>
+          </div>
+          <div class="media-body mb-4 border-b">
+            <h3 class="text-xl font-sans font-bold mb-6">Register<span class="text-sm text-gray-600 font-normal"> final step </span></h3>
+            <div class="w-full flex justify-center overflow-hidden">
+              <img src="/media/afrikbook/register_3.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+            </div>
+            <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+              <ul class="text-gray-600 text-sm font-sans">
+                <li><a href="#" class="my-4">Username[ ]</a></li>
+                <li><a href="#" class="my-4">Password[ ]</a></li>
+              </ul>
+            </div>
+            <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and verify your email then click submit to register</p>
+          </div>
+          <div class="media-body mb-4 border-b">
+            <h3 class="text-xl font-sans font-bold mb-6">Data Setup</h3>
+            <div class="w-full flex justify-center overflow-hidden">
+              <img src="/media/afrikbook/migration.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+            </div>
+            <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+            
+            <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and verify your email then click submit to register</p>
+          </div>
+          <div class="media-body mb-4">
+            <h3 class="text-xl font-sans font-bold mb-6">Login</h3>
+            <div class="w-full flex justify-center overflow-hidden">
+              <img src="/media/afrikbook/login.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+            </div>
+            <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+            <div class="col-md-4 mb-md-0 mb-4 border-b">
+              <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+              <ul class="text-gray-600 text-sm font-sans">
+                <li><a href="#" class="my-4">Username[ ]</a></li>
+                <li><a href="#" class="my-4">Password[ ]</a></li>
+              </ul>
+            </div>
+            <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and  click login to access your dashboard</p>
+          </div>
+          <div class="media-body mb-4 border-b">
+            <h3 class="text-xl font-sans font-bold mb-6">Complete profile setup</h3>
+            <div class="w-full flex justify-center overflow-hidden">
+              <img src="/media/afrikbook/profile_setup_1.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+            </div>
+            <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+              <ul class="text-gray-600 text-sm font-sans">
+                <li><a href="#" class="my-4">Owner name[ ]</a></li>
+                <li><a href="#" class="my-4">Service Description[ ]</a></li>
+              </ul>
+            </div>
+            <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click setup to complete profile setup</p>
+          </div>
+        </div>
+        <div id="account" class="page py-6 hidden">
+          <div class="border rounded-md">
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="account-1">
+                <span class="flex-1">Chart of account</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="account-1" class="px-2 mt-2 hidden">
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">New</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/account_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Account ID[ ]</a></li>
+                      <li><a href="#" class="my-4">Description[ ]</a></li>
+                      <li><a href="#" class="my-4">Account Type[ ]</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new account</p>
+                </div>
+
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">View Accounts</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/account_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                 
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click the view icon to see more details about the account</p>
+                </div>
+
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Account Setup</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/account_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Series Name[ ]</a></li>
+                      <li><a href="#" class="my-4">Series ID(auto generated)[ ]</a></li>
+                      <li><a href="#" class="my-4">Account Type[ ]</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to setup new account</p>
+                </div>
+                
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="account-2">
+                <span class="flex-1">Inter Account transfer</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="account-2" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add Inter Account transfer</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Description[ ]</a></li>
+                        <li><a href="#" class="my-4">Transfer From[ ]</a></li>
+                        <li><a href="#" class="my-4">Receive In[ ]</a></li>
+                        <li><a href="#" class="my-4">Amouhnt[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to transfer amount from Transfer From(account) to Received In(account)</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View Inter Account transfer </h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your transaction details</p>
+                  </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+        <div id="vendor" class="page py-6 hidden">
+          <div class="border rounded-md">
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="vendor-1">
+                <span class="flex-1">Purchase Invoice</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="vendor-1" class="px-2 mt-2 hidden">
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">New</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/account_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Supplier[ ]</a></li>
+                      <li><a href="#" class="my-4">Warehouse[ ]</a></li>
+                      <li><a href="#" class="my-4">Method of Payment[ ]</a></li>
+                      <li><a href="#" class="my-4">You must select at least one item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to purchase selected items from selected vendor and stock in the selected Warehouse or Outlet</p>
+                </div>
+                
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="vendor-2">
+                <span class="flex-1">Purchase Quotes</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="vendor-2" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Supplier[ ]</a></li>
+                        <li><a href="#" class="my-4">You must select at least one item</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generate new purchase quote</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your purchase quote</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="vendor-3">
+                <span class="flex-1">Purchase Order</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="vendor-3" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Supplier[ ]</a></li>
+                        <li><a href="#" class="my-4">You must select at least one item</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generate new purchase order</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your purchase order</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="vendor-4">
+                <span class="flex-1">Return Outwards</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="vendor-4" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter the invoice you want to return under Invoice Number to get invoice details </p>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Returned Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Warehouse[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to return invoice</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View </h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your returned invoice</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="vendor-5">
+                <span class="flex-1">Vendor</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="vendor-5" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">New Vendor</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Name[ ]</a></li>
+                        <li><a href="#" class="my-4">Phone Number[ ]</a></li>
+                        <li><a href="#" class="my-4">Address[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new vendor</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit vendor</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon under action colunm to delete vendor</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View Vendor </h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit vendor</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon to under action colunm delete vendor</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="vendor-6">
+                <span class="flex-1">Purchase Adjustment</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="vendor-6" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add Inter Account transfer</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Description[ ]</a></li>
+                        <li><a href="#" class="my-4">Transfer From[ ]</a></li>
+                        <li><a href="#" class="my-4">Receive In[ ]</a></li>
+                        <li><a href="#" class="my-4">Amouhnt[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to transfer amount from Transfer From(account) to Received In(account)</p>
+                  </div>
+              </div>          
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="vendor-7">
+                <span class="flex-1">Cancel Purchase</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="vendor-7" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Cancel Purchase Invoice</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Search invoice by date range, item or Invoice ID</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click cancel under action colunm to  cancel purchase</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View Cancelled Invoice </h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all cancelled purchase</p>
+                  </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div id="customer" class="page py-6 hidden">
+          <div class="border rounded-md">
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-1">
+                <span class="flex-1">Sales Invoices </span>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-1" class="px-2 mt-2 hidden">
+                <div class="media-body mb-4 border-b">
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">We have two interface for sales invoice Basic Sales Interface(default) and Sales Point Interface.</p>
+                  <div class="text-sm">
+                    <h2 class="mb-2 font-semibold font-sans">To switch sales Interface</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Click settings</a></li>
+                      <li><a href="#" class="my-4">Select Profile setup</a></li>
+                      <li><a href="#" class="my-4">User sales Interface select the interface of your choice </a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">New Sales (Basic sales Interface)</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_1.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">Description[ ]</a></li>
+                      <li><a href="#" class="my-4">Payment Method[ ]</a></li>
+                      <li><a href="#" class="my-4">you must select at least One item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Cash is selected as the payent method, We assume you are paying in cash</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Customer balance is selected as the payent method the system will use the selected customer's or vendor's balance if sufficient</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Transfer is selected as the payent method, account dropdown will pop up to select the account you want to transfer to</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Cheque is selected as the payent method, We assume you have you payiny with Cheque</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Transfer and Cash is selected as the payent method, transfer and cash input will pop up where you spacify the transfer and cash  amounts and select the account you want to transfer to</p>
+                  
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click More fields to see other filed</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click Tp be shipped if you want to ship the items to the customer or vendor and then select Shippping method and shipping address if the customer or vendor has any</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new Invoice</p>
+                </div>
+
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">New Sales(Sales Point Interface)</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_2.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Customer</a></li>
+                      <li><a href="#" class="my-4">Payment Method[ ]</a></li>
+                      <li><a href="#" class="my-4">you must select at least One item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Cash is selected as the payent method, We assume you are paying in cash</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Transfer is selected as the payent method, account dropdown will pop up to select the account you want to transfer to</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Cheque is selected as the payent method, We assume you have you payiny with Cheque</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Transfer and Cash is selected as the payent method, transfer and cash input will pop up where you spacify the transfer and cash  amounts and select the account you want to transfer to</p>
+                  
+                 
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new Invoice</p>
+                </div>
+
+              
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-2">
+                <span class="flex-1">Sales Quotes</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-2" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_quote_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Customer/ Vendor/ Cashual Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">You must select at least one item</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generate sales quote </p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/slaes_quote_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your view all sales quotes</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-3">
+                <span class="flex-1">Sales Order</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-3" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_order_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                        <li><a href="#" class="my-4">You must select at leat one item</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generated new sales order</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_order_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your sales order</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-4">
+                <span class="flex-1">Return Inwards</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-4" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_reurn_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Select the invoice you want to return under Invoice Number to get invoice details </p>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Method of Payment</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to return selected invoice</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View </h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_return_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">From[ ]</a></li>
+                        <li><a href="#" class="my-4">TO[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click serach to retrieve returned invoice within the range of From and To date inputs</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-5">
+                <span class="flex-1">Customer Opening Balance</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-5" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_reurn_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Select the invoice you want to return under Invoice Number to get invoice details </p>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Amount[ ]</a></li>
+                        <li><a href="#" class="my-4">Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">Transaction Type[ ]</a></li>
+                        <li><a href="#" class="my-4">Operating Account[ ]</a></li>
+                        <li><a href="#" class="my-4">Description</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click Save to open a new balance to selected customer</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View </h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_return_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">From[ ]</a></li>
+                        <li><a href="#" class="my-4">TO[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click serach to retrieve returned invoice within the range of From and To date inputs</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-6">
+                <span class="flex-1">Customer</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-6" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">New Customer</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Name[ ]</a></li>
+                        <li><a href="#" class="my-4">Phone Number[ ]</a></li>
+                        <li><a href="#" class="my-4">Category[ ]</a></li>
+                        <li><a href="#" class="my-4">Company Name[ ]</a></li>
+                        <li><a href="#" class="my-4">Email[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon under action colunm to delete customer</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View Customers</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click view icon under view colunm to view customers data and invoice details</p>
+                  </div>
+
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Shippping Address</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">City[ ]</a></li>
+                        <li><a href="#" class="my-4">State[ ]</a></li>
+                        <li><a href="#" class="my-4">Country[ ]</a></li>
+                        <li><a href="#" class="my-4">Address[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new shipping address for selected customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit customer's shipping address</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon under action colunm to delete customer's shipping address</p>
+                  </div>
+
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Billing Address</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">City[ ]</a></li>
+                        <li><a href="#" class="my-4">State[ ]</a></li>
+                        <li><a href="#" class="my-4">Country[ ]</a></li>
+                        <li><a href="#" class="my-4">Address[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new billing address for selected customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit customer's billing address</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon under action colunm to delete customer's billing address</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-7">
+                <span class="flex-1">Refund Customer</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-7" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add Inter Account transfer</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Description[ ]</a></li>
+                        <li><a href="#" class="my-4">Transfer From[ ]</a></li>
+                        <li><a href="#" class="my-4">Receive In[ ]</a></li>
+                        <li><a href="#" class="my-4">Amouhnt[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to transfer amount from Transfer From(account) to Received In(account)</p>
+                  </div>
+              </div>          
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-8">
+                <span class="flex-1">Verify Payment</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-8" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Verify</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Description[ ]</a></li>
+                        <li><a href="#" class="my-4">Transfer From[ ]</a></li>
+                        <li><a href="#" class="my-4">Receive In[ ]</a></li>
+                        <li><a href="#" class="my-4">Amouhnt[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to transfer amount from Transfer From(account) to Received In(account)</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your transaction details</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="customer-9">
+                <span class="flex-1">Customer Incentives</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="customer-9" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Calculate Incentives</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Description[ ]</a></li>
+                        <li><a href="#" class="my-4">Transfer From[ ]</a></li>
+                        <li><a href="#" class="my-4">Receive In[ ]</a></li>
+                        <li><a href="#" class="my-4">Amouhnt[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to transfer amount from Transfer From(account) to Received In(account)</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View Incentives</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your transaction details</p>
+                  </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div id="journal" class="page py-6 hidden">
+          <div class="border rounded-md">
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="journal-1">
+                <span class="flex-1">Journal Entry</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="journal-1" class="px-2 mt-2 hidden">
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Add New Journal</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/account_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Account ID[ ]</a></li>
+                      <li><a href="#" class="my-4">Description[ ]</a></li>
+                      <li><a href="#" class="my-4">Account Type[ ]</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new account</p>
+                </div>
+
+                
+
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Receive Payment</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/account_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Series Name[ ]</a></li>
+                      <li><a href="#" class="my-4">Series ID(auto generated)[ ]</a></li>
+                      <li><a href="#" class="my-4">Account Type[ ]</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to setup new account</p>
+                </div>
+
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">View Journal Entry</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/account_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                 
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click the view icon to see more details about the account</p>
+                </div>
+                
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="journal-2">
+                <span class="flex-1">Loan Manager</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="journal-2" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Description[ ]</a></li>
+                        <li><a href="#" class="my-4">Transfer From[ ]</a></li>
+                        <li><a href="#" class="my-4">Receive In[ ]</a></li>
+                        <li><a href="#" class="my-4">Amouhnt[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to transfer amount from Transfer From(account) to Received In(account)</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">View all your transaction details</p>
+                  </div>
+              </div>
+            </section>
+           
+          </div>
+        </div>
+        <div id="stock" class="page py-6 hidden">
+          <div class="border rounded-md">
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="stock-1">
+                <span class="flex-1">Item Issue </span>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="stock-1" class="px-2 mt-2 hidden">
+
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">New Sales (Basic sales Interface)</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_1.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">Description[ ]</a></li>
+                      <li><a href="#" class="my-4">Payment Method[ ]</a></li>
+                      <li><a href="#" class="my-4">you must select at least One item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Cash is selected as the payent method, We assume you are paying in cash</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Customer balance is selected as the payent method the system will use the selected customer's or vendor's balance if sufficient</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Transfer is selected as the payent method, account dropdown will pop up to select the account you want to transfer to</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Cheque is selected as the payent method, We assume you have you payiny with Cheque</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">When Transfer and Cash is selected as the payent method, transfer and cash input will pop up where you spacify the transfer and cash  amounts and select the account you want to transfer to</p>
+                  
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click More fields to see other filed</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click Tp be shipped if you want to ship the items to the customer or vendor and then select Shippping method and shipping address if the customer or vendor has any</p>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new Invoice</p>
+                </div>
+
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="stock-2">
+                <span class="flex-1">New Stockin</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="stock-2" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_quote_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Customer/ Vendor/ Cashual Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">You must select at least one item</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generate sales quote </p>
+                  </div>
+  
+    
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="stock-3">
+                <span class="flex-1">Transfer Stock</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="stock-3" class="px-2 mt-2 hidden">
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Warehouse To Warehouse</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_order_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      li><a href="#" class="my-4">Date[ ]</a></li>
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">You must select at leat one item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generated new sales order</p>
+                </div>
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Warehouse To Outlet</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_order_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      li><a href="#" class="my-4">Date[ ]</a></li>
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">You must select at leat one item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generated new sales order</p>
+                </div>
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Outlet To Warehouse</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_order_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      li><a href="#" class="my-4">Date[ ]</a></li>
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">You must select at leat one item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generated new sales order</p>
+                </div>
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Verify Transfer</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_order_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      li><a href="#" class="my-4">Date[ ]</a></li>
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">You must select at leat one item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generated new sales order</p>
+                </div>
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Transfer History</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_order_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      li><a href="#" class="my-4">Date[ ]</a></li>
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">You must select at leat one item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generated new sales order</p>
+                </div>
+                <div class="media-body mb-4 border-b">
+                  <h3 class="text-xl font-sans font-bold mb-6">Outlet To Outlet</h3>
+                  <div class="w-full flex justify-center overflow-hidden">
+                    <img src="/media/afrikbook/sales_order_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                  </div>
+                  <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                  <div class="col-md-4 mb-md-0 mb-4">
+                    <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                    <ul class="text-gray-600 text-sm font-sans">
+                      li><a href="#" class="my-4">Date[ ]</a></li>
+                      <li><a href="#" class="my-4">Customer/ Vendor[ ]</a></li>
+                      <li><a href="#" class="my-4">You must select at leat one item</a></li>
+                    </ul>
+                  </div>
+                  <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to generated new sales order</p>
+                </div>
+   
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="stock-4">
+                <span class="flex-1">Stock Adjustment</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="stock-4" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Warehouse</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_reurn_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Select the invoice you want to return under Invoice Number to get invoice details </p>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Method of Payment</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to return selected invoice</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Outlet </h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_return_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">From[ ]</a></li>
+                        <li><a href="#" class="my-4">TO[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click serach to retrieve returned invoice within the range of From and To date inputs</p>
+                  </div>
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="stock-5">
+                <span class="flex-1">Item</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="stock-5" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add New Item</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_reurn_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Select the invoice you want to return under Invoice Number to get invoice details </p>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Date[ ]</a></li>
+                        <li><a href="#" class="my-4">Amount[ ]</a></li>
+                        <li><a href="#" class="my-4">Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">Transaction Type[ ]</a></li>
+                        <li><a href="#" class="my-4">Operating Account[ ]</a></li>
+                        <li><a href="#" class="my-4">Description</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click Save to open a new balance to selected customer</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Item Category</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/sales_return_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">From[ ]</a></li>
+                        <li><a href="#" class="my-4">TO[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click serach to retrieve returned invoice within the range of From and To date inputs</p>
+                  </div>
+
+                  <section class="border-b mb-6">
+                    <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="stock-5-1">
+                      <span class="flex-1">Stock Level</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                    <div id="stock-5-1" class="px-2 mt-2 hidden">
+                        <div class="media-body mb-4 border-b">
+                          <h3 class="text-xl font-sans font-bold mb-6">Outlet stock</h3>
+                          <div class="w-full flex justify-center overflow-hidden">
+                            <img src="/media/afrikbook/sales_reurn_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                          </div>
+                          <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                          <p class="text-md font-sans text-gray-600 leading-normal mb-4">Select the invoice you want to return under Invoice Number to get invoice details </p>
+                          <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                            <ul class="text-gray-600 text-sm font-sans">
+                              <li><a href="#" class="my-4">Date[ ]</a></li>
+                              <li><a href="#" class="my-4">Amount[ ]</a></li>
+                              <li><a href="#" class="my-4">Customer[ ]</a></li>
+                              <li><a href="#" class="my-4">Transaction Type[ ]</a></li>
+                              <li><a href="#" class="my-4">Operating Account[ ]</a></li>
+                              <li><a href="#" class="my-4">Description</a></li>
+                            </ul>
+                          </div>
+                          <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click Save to open a new balance to selected customer</p>
+                        </div>
+                        <div class="media-body mb-4 border-b">
+                          <h3 class="text-xl font-sans font-bold mb-6">Warehouse stock</h3>
+                          <div class="w-full flex justify-center overflow-hidden">
+                            <img src="/media/afrikbook/sales_reurn_new.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                          </div>
+                          <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                          <p class="text-md font-sans text-gray-600 leading-normal mb-4">Select the invoice you want to return under Invoice Number to get invoice details </p>
+                          <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                            <ul class="text-gray-600 text-sm font-sans">
+                              <li><a href="#" class="my-4">Date[ ]</a></li>
+                              <li><a href="#" class="my-4">Amount[ ]</a></li>
+                              <li><a href="#" class="my-4">Customer[ ]</a></li>
+                              <li><a href="#" class="my-4">Transaction Type[ ]</a></li>
+                              <li><a href="#" class="my-4">Operating Account[ ]</a></li>
+                              <li><a href="#" class="my-4">Description</a></li>
+                            </ul>
+                          </div>
+                          <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click Save to open a new balance to selected customer</p>
+                        </div>
+        
+                        <div class="media-body mb-4 border-b">
+                          <h3 class="text-xl font-sans font-bold mb-6">Stock Level Comparision</h3>
+                          <div class="w-full flex justify-center overflow-hidden">
+                            <img src="/media/afrikbook/sales_return_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                          </div>
+                          <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                          <div class="col-md-4 mb-md-0 mb-4">
+                            <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                            <ul class="text-gray-600 text-sm font-sans">
+                              <li><a href="#" class="my-4">From[ ]</a></li>
+                              <li><a href="#" class="my-4">TO[ ]</a></li>
+                            </ul>
+                          </div>
+                          <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click serach to retrieve returned invoice within the range of From and To date inputs</p>
+                        </div>
+                        
+                    </div>
+                  </section>
+
+              </div>
+            </section>
+            <section class="border-b">
+              <div class="flex justify-between items-center p-4 bg-gray-100 hover:bg-gray-200 nav1" data-target="stock-6">
+                <span class="flex-1">Coupon</span>
+                <svg xmlns="http://www.w3.org/2000/svg" :class="{'rotate-120': open, 'rotate-0': !open}" class="w-4 h-4 mt-1 transform " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div id="stock-6" class="px-2 mt-2 hidden">
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Add Coupon</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_asdd.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Name[ ]</a></li>
+                        <li><a href="#" class="my-4">Phone Number[ ]</a></li>
+                        <li><a href="#" class="my-4">Category[ ]</a></li>
+                        <li><a href="#" class="my-4">Company Name[ ]</a></li>
+                        <li><a href="#" class="my-4">Email[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon under action colunm to delete customer</p>
+                  </div>
+  
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">View Customers</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                   
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click view icon under view colunm to view customers data and invoice details</p>
+                  </div>
+
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Shippping Address</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">City[ ]</a></li>
+                        <li><a href="#" class="my-4">State[ ]</a></li>
+                        <li><a href="#" class="my-4">Country[ ]</a></li>
+                        <li><a href="#" class="my-4">Address[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new shipping address for selected customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit customer's shipping address</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon under action colunm to delete customer's shipping address</p>
+                  </div>
+
+                  <div class="media-body mb-4 border-b">
+                    <h3 class="text-xl font-sans font-bold mb-6">Billing Address</h3>
+                    <div class="w-full flex justify-center overflow-hidden">
+                      <img src="/media/afrikbook/transfer_view.PNG" alt="" class="h-96 my-6 transition-transform duration-300 transform hover:scale-150 border" style="background-repeat: no-repeat;">
+                    </div>
+                    <a href="#" class="flex justify-end mr-4 my-2 text-blue-900">Watch Video clip</a>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                      <h2 class="mb-2 font-semibold font-sans">Required fields</h2>
+                      <ul class="text-gray-600 text-sm font-sans">
+                        <li><a href="#" class="my-4">Customer[ ]</a></li>
+                        <li><a href="#" class="my-4">City[ ]</a></li>
+                        <li><a href="#" class="my-4">State[ ]</a></li>
+                        <li><a href="#" class="my-4">Country[ ]</a></li>
+                        <li><a href="#" class="my-4">Address[ ]</a></li>
+                      </ul>
+                    </div>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Enter required credentials and click create to create new billing address for selected customer</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click edit icon under action colunm to edit customer's billing address</p>
+                    <p class="text-md font-sans text-gray-600 leading-normal mb-4">Click delete icon under action colunm to delete customer's billing address</p>
+                  </div>
+              </div>
+            </section>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  $(".button").click(function () {
+    var currentPage = parseInt($('#currentPage').text());
+    var page = $(this).data('target')
+    var num = parseInt($(this).data('num'))
+
+    $('.button').removeClass('bg-gray-900')
+    $(this).removeClass('bg-primary')
+    $(this).addClass('bg-gray-900')
+
+    $(".page").slideUp('slow')
+    $(`#${page}`).toggle('slow')
+
+ 
+    // $('#currentPage').text(page[0].toUppercase())
+    // console.log(page + " " + num)
+  });
+
+
+  $(".nav1").click(function () {
+    var page = $(this).data('target')
+
+    // $(".page").slideUp('slow')
+    $(`#${page}`).slideToggle('slow')
+  });
+
+  
+
+</script>
+
+
+{% endblock content %}

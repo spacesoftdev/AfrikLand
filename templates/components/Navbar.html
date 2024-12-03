@@ -1,0 +1,40 @@
+
+<nav class="flex justify-center bg-primary" id="ftco-navba">
+    <div class="container flex items-center text-white justify-between px-2 py-6">
+        <a class="hidden lg:block text-2xl font-bold font-sans" href="{% url 'index:home' %}">Afrikbook Accounting</a>
+        <div class="hidden lg:block" id="ftco-nav">
+            <ul class="flex items-center uppercase text-sm font-semibold font-sans gap-8">
+              <li class="transition  duration-300 delay-50 hover:text-green-600"><a href="{% url 'index:home' %}" class="nav-link">Home</a></li>
+              <li class="ntransition  duration-300 delay-50 hover:text-green-600"><a href="{% url 'index:about' %}" class="nav-link">About</a></li>
+              <li class="ntransition  duration-300 delay-50 hover:text-green-600"><a href="{% url 'index:services' %}" class="nav-link">Services</a></li>
+              <li class="ntransition  duration-300 delay-50 hover:text-green-600"><a href="{% url 'index:mannual' %}" class="nav-link">Mannual</a></li>
+              <!-- <li class="ntransition  duration-300 delay-50 hover:text-green-600"><a href="{% url 'index:blog' %}" class="nav-link">Blog</a></li> -->
+              <li class="ntransition  duration-300 delay-50 hover:text-green-600"><a href="{% url 'index:contact' %}" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <form action="#" class="searchform order-sm-start order-lg-last">
+            <div class="form-group flex justify-center items-center">
+                <input type="text" class="outline-none rounded-l text-gray-600" placeholder="Search">
+                <button type="submit" placeholder="" class="form-control search bg-primary h-10 w-10 md:w-20"><span class="fa fa-search"></span></button>
+            </div>
+        </form>
+        <div class="block lg:hidden text-white flex gap-2">
+            <button @click="open = !open" class="toggle inline-flex items-center justify-center p-2  rounded-md  focus:outline-none " x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                <svg class="w-6 h-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+    
+     
+    </div>
+  </nav>
+<!-- END nav -->
+
+<script>
+    $(".toggle").click(function(){
+       $('#side-nav').slideToggle('slow')
+    //    $('#side-nav').toggle('slow')
+    })
+</script>

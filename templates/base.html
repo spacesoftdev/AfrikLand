@@ -1,0 +1,48 @@
+{% load static %}
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Afrikbook</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+		<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+		<!-- Jquery -->
+        <script src="{% static 'js/jquery.js' %}"></script>
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+       
+	</head>
+
+	<body class="bg-gray-50 font-serif  leading-normal tracking-normal relative h-screen w-full">
+		
+		{% include 'components/feedback.html' %}
+		{% include 'components/Navbar.html' %}
+		{% include 'components/Sidebar.html' %}
+		{% block content %}
+				
+		{% endblock content %}
+		
+		{% include 'components/Footer.html' %}
+		
+		
+		<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+		<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+		<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+		<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script src="{% static 'js/feedback.js' %}"></script>
+		<script src="{% static 'js/myjs.js' %}"></script>
+		
+		
+	</body>
+	
+</html>
+
