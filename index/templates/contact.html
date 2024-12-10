@@ -3,7 +3,7 @@
 {% block content %}
 
 <section class="flex justify-center hero-wrap hero-wrap-2 h-full "
-    style="background-image: url('/media/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    style="background-image: url('/media/images/bg_22.png');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
 
     <div class="container w-7/12">
@@ -22,46 +22,49 @@
 </style>
 
 <section class="bg-gray-200 flex justify-center py-8">
-    <div class="container w-full">
+    <div class="w-full">
         <div class="flex justify-center">
-            <div class="w-8/12">
+            <div class="w-10/12 md:w-8/12">
                 <div class="wrapper font-sans">
                     <div class="flex flex-col md:flex-row border bg-white">
                         <div class="h-[600px] w-full lg:w-7/12">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4 font-semibold text-xl text-primary ftco-animate">Get in touch</h3>
                                 <div id="form-message-warning" class="mb-4"></div>
-                                <div id="form-message-success" class="mb-4">
-                                    Your message was sent, thank you!
-                                </div>
-                                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                {% for message in messages %}
+                                    <div id="form-message-success" class="mb-4 {% if message.tags == 'success' %} text-green-600 {%else%} text-red-500 {% endif %}">
+                                         {{message}}
+                                    </div>
+                                {% endfor %}
+                                <form method="POST" action="#">
+                                    {% csrf_token %}
                                     <div class="">
                                         <div class="mb-4">
                                             <div class="flex flex-col">
                                                 <label class="label" for="name">Full Name</label>
-                                                <input type="text" class="border-b border-gray-300 outline-none  focus:border-0 active:border-0 focus:outline-none" name="name" id="name"
-                                                    placeholder="Name">
+                                                <input type="text" class="border-b border-gray-300 outline-none  focus:border-0 active:border-0 focus:outline-none" name="fullname" id="name"
+                                                    placeholder="Name" required>
                                             </div>
                                         </div>
                                         <div class="mb-4">
                                             <div class="flex flex-col">
                                                 <label class="label" for="email">Email Address</label>
                                                 <input type="email" class="border-b border-gray-300 outline-none  focus:border-0 active:border-0 focus:outline-none" name="email" id="email"
-                                                    placeholder="Email">
+                                                    placeholder="Email" required>
                                             </div>
                                         </div>
                                         <div class="mb-4">
                                             <div class="flex flex-col">
                                                 <label class="label" for="subject">Subject</label>
                                                 <input type="text" class="border-b border-gray-300 outline-none  focus:border-0 active:border-0 focus:outline-none" name="subject" id="subject"
-                                                    placeholder="Subject">
+                                                    placeholder="Subject" required>
                                             </div>
                                         </div>
                                         <div class="mb-4">
                                             <div class="flex flex-col">
                                                 <label class="label" for="#">Message</label>
                                                 <textarea name="message" class="border-b border-gray-300 outline-none  focus:border-0 active:border-0 focus:outline-none" id="message" cols="30"
-                                                    rows="4" placeholder="Message"></textarea>
+                                                    rows="4" placeholder="Message" required></textarea>
                                             </div>
                                         </div>
                                         <div class="mt-6">
@@ -91,7 +94,7 @@
                                         <span class="fa fa-phone w-3"></span>
                                     </div>
                                     <div class="text pl-3">
-                                        <p><span>Phone:</span> <a href="tel://1234567920">+ 234 6873 4840</a></p>
+                                        <p><span>Phone:</span> <a href="tel://09068734840">+234 906873 4840</a></p>
                                     </div>
                                 </div>
                                 <div class="flex items-center mb-6">
@@ -99,7 +102,7 @@
                                         <span class="fa fa-paper-plane w-3"></span>
                                     </div>
                                     <div class="text pl-3">
-                                        <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                                        <p><span>Email:</span> <a href="mailto:afrikbook@gmail.com">afrikbook@gmail.com</a>
                                         </p>
                                     </div>
                                 </div>
@@ -108,7 +111,7 @@
                                         <span class="fa fa-globe w-3"></span>
                                     </div>
                                     <div class="text pl-3">
-                                        <p><span>Website</span> <a href="#">yoursite.com</a></p>
+                                        <p><span>Website:</span> <a href="acc.afrikbook.com">afrikbook.accounting.con</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -122,3 +125,4 @@
 
 
 {% endblock content %}
+

@@ -28,8 +28,8 @@
                                     <div class="col-md-4 mb-md-0 mb-4">
                                         <h2 class="text-white mb-4 uppercase font-semibold">Discover</h2>
                                         <ul class="text-slate-400">
-                                            <li><a href="#" class="py-1 d-block">About us</a></li>
-                                            <li><a href="#" class="py-1 d-block">Contract us</a></li>
+                                            <li><a href="{% url 'index:about' %}" class="py-1 d-block">About</a></li>
+                                            <li><a href="{% url 'index:contact' %}" class="py-1 d-block">Contact</a></li>
                                             <li><a href="#" class="py-1 d-block">Terms &amp; Conditions</a></li>
                                             <li><a href="#" class="py-1 d-block">Policies</a></li>
                                         </ul>
@@ -52,18 +52,24 @@
             </div>
             <div class="flex-auto w-full md:w-3/12 bg-gray-900 p-8">
                 <h2 class="text-white mb-4 uppercase font-bold">Free consultation</h2>
-                <form action="#" class="form-consultation">
+                <div id="form-message-success" class="mb-4 {% if message.tags == 'success' %} text-green-600 {%else%} text-red-500 {% endif %}">
+                    {% for message in messages %}
+                         {{message}}
+                    {% endfor %}
+                </div>
+                <form method="post" action="{% url 'index:contact' %}" class="form-consultation">
+                    {% csrf_token %}
                     <div class="mb-4">
-                        <input type="text" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Your Name">
+                        <input type="text" name="fullname" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Your Name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Your Email">
+                        <input type="email" name="email" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Your Email" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Subject">
+                        <input type="text" name="subject" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Subject" required>
                     </div>
                     <div class="mb-4">
-                        <textarea name="" id="" cols="30" rows="3" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Message"></textarea>
+                        <textarea name="message" id="" cols="30" rows="3" class="w-full bg-gray-900 rounded-lg text-slate-400 text-sm" placeholder="Message" required></textarea>
                     </div>
                     <div class="form-group">
                         <button type="submit" class="w-full bg-green-600 py-2 submit px-3 text-white">Send A Message</button>

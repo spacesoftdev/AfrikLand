@@ -2,24 +2,30 @@
 
 {% block content %}
 
-<section class="flex justify-center hero-wrap hero-wrap-2 h-full  mb-6" style="background-image: url('/media/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+<section class="flex justify-center hero-wrap hero-wrap-2 h-full  mb-6" style="background-image: url('/media/images/bg_22.png');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     
     <div class="container w-7/12">
       <div class="flex items-center no-gutters slider-text align-items-end">
         <div class="col-md-9 ftco-animate pb-5">
-            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{% url 'index:home'%}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
-          <h1 class="mb-0 bread">About Us</h1>
+            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{% url 'index:home'%}">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About<i class="ion-ios-arrow-forward"></i></span></p>
+          <h1 class="mb-0 bread">About</h1>
         </div>
       </div>
     </div>
 </section>
 <section class="flex justify-center  my-6 py-6">   
-    <div class="container w-7/12">
+    <div class="w-10/12 md:w-7/12">
       <div class="flex items-center no-gutters slider-text align-items-end">
         <div class="col-md-9 ftco-animate pb-5">
-          <h1 class="mb-0 text-lg">About Us</h1>
-          <p class="text-md font-sans text-gray-600 leading-loose">Our accounting software is a comprehensive, user-friendly tool designed to streamline financial management for businesses of all sizes. With an intuitive interface, it automates complex tasks such as bookkeeping, invoicing, expense tracking, payroll processing, and financial reporting. Built with robust security, it ensures that sensitive financial data remains protected at all times.</p>
+          <h1 class="mb-0 text-lg">About</h1>
+          <p class="text-md font-sans text-gray-600 leading-loose">
+            Spacesoft Integral System Ltd. proudly introduces our advanced accounting software, a comprehensive and user-friendly solution designed to revolutionize financial management for businesses of all sizes. This cutting-edge tool combines ease of use with powerful features, making it an essential asset for managing your financial operations efficiently and effectively.
+            Our software is built to handle the complexities of modern accounting with ease, offering automated solutions for bookkeeping, invoicing, expense tracking, payroll processing, and financial reporting. The intuitive interface ensures a seamless user experience, allowing business owners and accountants to focus more on growth and decision-making rather than being bogged down by manual financial tasks.
+          </p>
+          <p class="text-md font-sans text-gray-600 leading-loose">
+            Spacesoft Integral System Ltd. is committed to innovation and excellence, and this software exemplifies our dedication to providing world-class solutions that empower businesses to succeed. Let us handle the numbers, so you can focus on achieving your goals.
+          </p>
         </div>
       </div>
       <div class="flex items-center no-gutters slider-text align-items-end">
@@ -34,11 +40,11 @@
 
 {% include 'components/first.html' %}
 
-{% include 'components/acheivements.html' %}
+<!-- {% include 'components/acheivements.html' %} -->
 
 {% include 'components/signup.html' %}
 
-{% include 'components/testimonies.html' %}
+<!-- {% include 'components/testimonies.html' %} -->
 
 
 {% endblock content %}
